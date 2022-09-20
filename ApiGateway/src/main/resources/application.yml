@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: DOCTOR
+        uri: lb://DOCTOR
+        predicates:
+        - Path=/doctor/**
+      - id: PATIENT
+        uri: lb://PATIENT
+        predicates:
+        - Path=/patient/**
+          
