@@ -1,0 +1,44 @@
+<h3>Create Doctor Record</h3>
+
+<form [formGroup]="formValue">
+    <div class="container">
+        <div class="mb-8">
+            <label class="form-label"> <b> Name </b></label>
+            <input formControlName="name" type="text" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label"><b>Age</b></label>
+            <input formControlName="age" type="number" class="form-control">
+        </div>
+
+        <div> <b>Gender</b> </div>
+
+        <div class="genderselect">         
+            <div class="mb-3">
+                <input formControlName="gender" type="radio" id="male" class="gender" value="male"
+                    style="margin-right: 10px;"><label>Male</label>
+            </div>
+
+            <div class="mb-3">
+                <input formControlName="gender" type="radio" id="female" class="gender" value="female"
+                    style="margin-right: 10px;"><label>Female</label>
+            </div>
+
+            <div class="mb-3">
+                <input formControlName="gender" type="radio" id="others" class="gender" value="others"
+                    style="margin-right: 10px;"><label>Others</label>
+            </div>
+            
+        </div>
+        
+        <div class="mb-3">
+            <label class="form-label"> <b>Specialist</b> </label>
+            <input formControlName="specialist" type="text" class="form-control">
+        </div>
+
+        <button type="button" class="btn btn-primary " (click)="postDoctorDetails()">Create</button>
+        <button type="button" class="btn btn-secondary mx-3 " >Close</button>
+    </div>
+
+</form>

@@ -1,0 +1,102 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    },
+    {
+      "name": "Sumanth",
+      "age": 22,
+      "gender": "male",
+      "specialist": "caasdfderfff",
+      "id": 2
+    },
+    {
+      "doc_name": "Sumanth sdfghjk",
+      "doc_age": 6,
+      "doc_gender": "others",
+      "doc_specialist": "fdsdfghj",
+      "id": 3
+    },
+    {
+      "patname": "Sumanth",
+      "visiteddoc": "",
+      "prescription": "asdfghjkmnbvcdg",
+      "date": "2022-09-28",
+      "id": 4
+    },
+    {
+      "patname": "wertyui sdfghjk",
+      "visiteddoc": "2",
+      "prescription": "asdfggfdxsfgjk",
+      "date": "2022-09-23",
+      "id": 5
+    },
+    {
+      "patname": "gdgjhgcfdf",
+      "patid": 101,
+      "visiteddoc": "2",
+      "prescription": "wdfghjkmnbgf",
+      "date": "2022-09-28",
+      "id": 6
+    },
+    {
+      "patname": "Sumanth",
+      "patid": 102,
+      "visiteddoc": "a",
+      "prescription": "sdfgbbvcss",
+      "date": "2022-09-26",
+      "id": 7
+    },
+    {
+      "patname": "Sumanth",
+      "patid": 7,
+      "visiteddoc": "sneha",
+      "prescription": "jhhj",
+      "date": "2022-09-20",
+      "id": 8
+    },
+    {
+      "patname": "Sumanth sdfghjk",
+      "patid": 123456,
+      "prescription": "asdfghjhgfds",
+      "date": "2022-08-30",
+      "id": 9
+    },
+    {
+      "patname": "Sumanth sdfghjk",
+      "patid": 9,
+      "visiteddoc": 1,
+      "prescription": "sdfghjklkhgfds",
+      "date": "2022-09-25",
+      "id": 10
+    },
+    {
+      "patname": "wertyui sdfghjk",
+      "patid": 8,
+      "visiteddoc": 6,
+      "prescription": "wertyuioiufds",
+      "date": null,
+      "id": 11
+    },
+    {
+      "patname": "Sumanth",
+      "patid": 6,
+      "visiteddoc": 5,
+      "prescription": "",
+      "date": "2022-09-14",
+      "id": 12
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

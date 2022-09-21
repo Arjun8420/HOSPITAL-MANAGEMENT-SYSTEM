@@ -1,0 +1,39 @@
+<h3>Available Patients List </h3>
+<div class="container">
+    <div class="mb-8">
+        <label  class="form-label"> <b> Enter Patient Id </b> </label>
+        <input [(ngModel)]="patid" type="text" class="form-control"> 
+    </div>
+
+    <button (click)="getData()" type="button" class="btn btn-outline-info" style="margin-top: 10px;"> Submit </button>
+
+    <div *ngIf="patient.length == 0"> </div>
+    <div *ngIf="patient.length>0"> 
+
+    <div>
+        <p> <b> Patient Name :</b> <span> {{name}} </span></p>
+        <p> <b> Patient age :</b> <span> {{age}} </span></p>
+
+
+        <table class="table mt-3">
+            <thead>
+              <tr>
+                <th scope="col">Visited Doctor</th>
+                <th scope="col">Date of visit</th>
+                <th scope="col">Prescription</th>                
+              </tr>
+            </thead>
+
+            <tbody>
+             
+              <tr *ngFor ="let i of patient;index as j" >
+              
+                <td>{{i["docName"]}}</td>
+                <td >{{i["date"]}}</td>
+                <td>{{i["prescription"]}}</td>
+              </tr>
+            </tbody>
+          </table> 
+        </div>
+    </div>
+</div>

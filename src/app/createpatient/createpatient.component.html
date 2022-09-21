@@ -1,0 +1,46 @@
+<h3>Create Patient Data</h3>
+
+<form [formGroup]="formValue">
+
+    <div class="container">
+        <div class="mb-8">
+            <label class="form-label"> <b> Name </b> </label>
+            <input formControlName="patname" type="text" class="form-control">
+        </div>
+
+        <div class="mb-8">
+            <label class="form-label"> <b> Patient ID </b> </label>
+            <input formControlName="patid" type="number" class="form-control">
+        </div>
+
+        <div class="mb-8">
+            <label class="form-label"> <b> Patient Age </b> </label>
+            <input formControlName="age" type="number" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label"><b> Visited Doctor</b></label>
+            <select formControlName="visiteddoc" (change)="changeDoc()" class="form-select" [(ngModel)]="selecteddoctor" aria-label="Disabled select example">
+                <option selected>Open this select menu</option>
+                <option  *ngFor="let doctor of doctors" [value]="doctor.docName">{{doctor.docName}}
+                </option>
+            </select>
+        </div>
+
+        <span>{{selecteddoctor}}</span>
+        <span>{{selecteddoctorid}}</span>
+
+        <div class="mb-3">
+            <label class="form-label"><b>Date</b></label>
+            <input formControlName="date" type="date" id="1" name="first" value="yyyy-month-date">
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label"><b>Prescription</b></label>
+            <input formControlName="prescription" type="text" class="form-control">
+        </div>
+
+        <button type="button" class="btn btn-primary" (click)="postPatient()">Create</button>
+        <button type="button" class="btn btn-secondary mx-3">Close</button>
+    </div>
+</form>

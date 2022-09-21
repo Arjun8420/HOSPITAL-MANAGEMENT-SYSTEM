@@ -1,0 +1,52 @@
+<div class="toolbar" role="banner">
+  <img width="50" alt="Hospital-Logo" src="https://th.bing.com/th/id/OIP.ANz3R47zn6VU7L1-2rDY9AHaHa?w=212&h=212&c=7&r=0&o=5&pid=1.7">
+
+  <div class="text-center" style="font-size: 1.8rem; font-weight: bold; text-align: center; margin-left: 27.5%;"> Hospital Management System </div>
+
+  <div class="spacer"></div>
+
+  <a aria-label=" YouTube" rel="noopener" title="YouTube">
+    <svg id="youtube-logo" height="44" width="44" data-name="Logo"
+      viewBox="0 0 24 24" fill="#F93154">
+      <path d="M0 0h24v24H0V0z" fill="none" />
+      <path
+        d="M21.58 7.19c-.23-.86-.91-1.54-1.77-1.77C18.25 5 12 5 12 5s-6.25 0-7.81.42c-.86.23-1.54.91-1.77 1.77C2 8.75 2 12 2 12s0 3.25.42 4.81c.23.86.91 1.54 1.77 1.77C5.75 19 12 19 12 19s6.25 0 7.81-.42c.86-.23 1.54-.91 1.77-1.77C22 15.25 22 12 22 12s0-3.25-.42-4.81zM10 15V9l5.2 3-5.2 3z" />
+    </svg>
+  </a>
+</div>
+
+<div class="content" role="main">
+  <h2>Welcome to our Hospital</h2>
+  <h6>Select the required fields below</h6>
+
+  <div class="card-container">
+    <a class="card"  routerLink="/doctor" rel="noopener">
+      <span>Create Doctor</span>
+      <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg> 
+    </a>
+
+    <a class="card"  routerLink='/patient' rel="noopener">
+      <span>Create Patient</span>
+      <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </a>
+
+    <a class="card"  rel="noopener" routerLink='/showdoctor'>
+      <span>Show Doctor</span>
+      <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </a>
+
+    <a class="card"  rel="noopener" routerLink='/showpatient'>
+      <span>Show Patient Info</span>
+      <svg class="material-icons" width="24" height="24" viewBox="0 0 24 24">
+        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z" />
+      </svg>
+    </a>
+  </div>
+</div>
+<router-outlet ></router-outlet>
