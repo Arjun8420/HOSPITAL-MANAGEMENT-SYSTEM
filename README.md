@@ -1,4 +1,4 @@
-JAVA Comprehensive case study
+# JAVA Comprehensive case study
 
 In a Hospital there are many doctors are appointed. Doctors can be categorized based on their specialist.Each doctor had id, name, age, gender and specialist fields. Patients can be allowed to visit doctor for consultation. Each patient has properties like id, name, visitedDoctor, dateOfVisit. Develop the below functionalities based on the above senarios.
 
